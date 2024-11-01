@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  animation-name: aylanish;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes aylanish {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+    margin-left: 1000px;
+    transform: rotate(180deg);
+  }
+}
